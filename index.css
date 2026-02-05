@@ -1,0 +1,397 @@
+
+@font-face {
+    font-family: "PixelFont";
+    src: url("fonts/Minecraftia-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Emojis";
+    src: url("fonts/EmojiFont.ttf");
+}
+
+:root {
+    --fondo: #111111;
+    --texto: #fcfcfc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: "PixelFont", monospace;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#marcador {
+    position: absolute;
+    font-size: 18px;
+    top: 40px;
+    left: 40px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--texto);
+    padding: 30px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 40px;
+    margin-bottom: 1px;
+}
+
+.titulo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.emoji {
+    font-family: "Emojis", monospace;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.interactivo {
+    display: inline-block;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.interactivo:hover {
+    transform: scale(1.2);
+}
+
+.interactivo:active {
+    animation: vibrar 0.2s linear;
+}
+
+.interactivopeque {
+    display: inline-block;
+    transition: transform 0.15s;
+}
+
+.interactivopeque:hover {
+    transform: scale(1.02);
+}
+
+@keyframes vibrar {
+    0%   { transform: scale(1.3) translate(0px, 0px); }
+    20%  { transform: scale(1.3) translate(-2px, 1px); }
+    40%  { transform: scale(1.3) translate(2px, -1px); }
+    60%  { transform: scale(1.3) translate(-1px, 2px); }
+    80%  { transform: scale(1.3) translate(1px, -2px); }
+    100% { transform: scale(1.3) translate(0px, 0px); }
+}
+
+.toggle-tema {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: var(--fondo);
+    color: var(--texto);
+    border: 2px solid var(--texto);
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--texto);
+    color: var(--fondo);
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.seccion {
+    border: 2px solid var(--texto);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.seccion,
+button,
+.card,
+.skill-card {
+    box-shadow: 4px 4px var(--texto);
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid var(--texto);
+    padding: 10px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.grid-sobre {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+.grande {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.mediana {
+    grid-column: 1 / 3;
+}
+
+.pequena {
+    grid-column: 2;
+}
+
+.card {
+    border: 2px solid var(--texto);
+    padding: 15px;
+    background-color: var(--fondo);
+}
+
+.card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--texto);
+    padding-bottom: 5px;
+}
+
+.titulito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-card {
+    border: 2px solid var(--texto);
+    padding: 15px;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--texto);
+    padding-bottom: 5px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icons img {
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+}
+/*
+Hola que tal buenos dias tardes o noches!!!!!!!!!!!!!!!!!!!!!!!!!!!! lol
+ */
+.contenedor:hover .texto {
+    opacity: 1;
+}
+
+.proyecto {
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.img-proyecto {
+    width: 100%;
+    max-width: 900px;
+    cursor: pointer;
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img,
+.lightbox video {
+    width: 100%;
+    max-width: 1250px;
+    height: auto;
+}
+
+.flecha {
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    padding: 40px;
+    color: #fcfcfc;
+}
+
+.flecha:hover {
+    transform: scale(1.2);
+}
+.cursor {
+    animation: parpadeo 1s steps(1, start) infinite;
+}
+
+@keyframes parpadeo {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.contact-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-icons a img {
+    width: 48px;
+    height: 48px;
+    transition: 0.1s;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.25);
+}
+
+.descarga {
+    color: #fcfcfc;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.descarga:hover {
+    opacity: 0.7;
+}
+
+.explotar {
+    animation: boom 1s forwards;
+}
+
+@keyframes boom {
+    0%   { transform: scale(1); opacity: 1; }
+    50%  { transform: scale(1.4); opacity: 0.7; }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+.oculto {
+    display: none;
+}
+
+.particula {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: var(--texto);
+    animation: particulaAnim 0.6s linear forwards;
+    image-rendering: pixelated;
+    box-shadow: 1px 1px 0 var(--fondo);
+}
+
+@keyframes particulaAnim {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-top: 30px;
+    }
+
+    .titulo-principal {
+        flex-direction: column;
+        font-size: 24px;
+        gap: 5px;
+    }
+
+    .emoji {
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .seccion {
+        padding: 15px;
+    }
+
+    .grid-sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .grande,
+    .pequena {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .icons img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .titulito {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

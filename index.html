@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Porfolio - Ivan C.</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+<!-- mirate que cotilla mirando el codigo eh, en fin, es lo que hay no? Al menos mandame un correo o algo si ves esto-->
+<!-- aqui la parte de arriba y tal -->
+<img src="img/Iconos/Sol.png" id="toggleTema" class="toggle-tema interactivo objeto" onclick="cambiarTema()" alt="solecito o lunita">
+<div class="objeto" id="marcador">
+    PTS: <span id="puntosHeader">0</span>
+</div>
+<!-- aqui toda la parte de arriba con los botones -->
+<header>
+
+    <h1 class="titulo-principal interactivopeque ">
+        <span class="emoji interactivopeque objeto">D</span>
+        <u class="objeto">//PORFOLIO - IVÁN CECILIA\\</u>
+        <span class="emoji interactivopeque objeto" >D</span>
+    </h1>
+    <nav>
+        <button onclick="mostrarSeccion('sobre')" class="interactivopeque objeto" >I - Sobre mí</button>
+        <button onclick="mostrarSeccion('skills')" class="interactivopeque objeto">II - Herramientas</button>
+        <button onclick="mostrarSeccion('proyectos')" class="interactivopeque objeto">III - Proyectos</button>
+        <button onclick="mostrarSeccion('contacto')" class="interactivopeque objeto">IV - Contacto</button>
+        <button onclick="mostrarSeccion('clicker')" class="interactivopeque objeto">V - ???</button>
+
+    </nav>
+</header>
+
+<main>
+    <!-- primera seccion que es el sobre mi -->
+    <section id="sobre" class="seccion ">
+        <h2 class="titulito objeto">//SOBRE MÍ<span class="emoji interactivo objeto">q</span></h2>
+
+        <div class="grid-sobre">
+
+            <div class="card grande interactivopeque objeto">
+                <img id="gif" src="img/EsoWeb-animation.gif" height="350" width="518" alt="gif">
+                <hr>
+                <p><b>Un poco sobre mí:</b></p>
+                <p> Me encantan los nuevos retos e intentar innovar en todo lo que puedo. Además, nunca me quedo tranquilo si veo que algo no queda perfecto, así que intento darlo todo siempre en lo que hago ^^</p>
+
+            </div>
+
+            <div class="card pequena interactivopeque objeto">
+                <h3>Estudios </h3>
+                <p>> Desarrollo de Aplicaciones Multimedia - CFGS</p>
+                <p>> Animación 2D y 3D - CFGS</p>
+                <p>> Bachillerato Artístico</p>
+
+            </div>
+
+            <div class="card pequena interactivopeque objeto">
+                <h3>Idiomas </h3>
+                <p>> Castellano - Nativo</p>
+                <p>> Catalán - Nativo</p>
+                <p>> Inglés - B2</p>
+            </div>
+            <div class="card mediana interactivopeque objeto">
+                <h3>Experiencia Laboral</h3>
+                <h4><u>Animador 3d - Prácticas</u> <span style="font-size: 12px; font-weight:normal">Oct 2024 - May 2025</span> </h4>
+                <p>> Estuve de animador 3D y modelador para la escuela donde estudie para hacer las animaciones que promocionan el ciclo en su página web</p>
+                <p>> Hice renders e iluminados de estos modelos y animaciones, creando diferentes planos cinemáticos</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion de las herramientas -->
+    <section id="skills" class="seccion oculto">
+        <h2 class="titulito objeto">
+            //QUÉ HERRAMIENTAS UTILIZO?
+            <span class="emoji interactivo objeto" >U</span>
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card interactivopeque">
+                <h3 class="objeto">PROGRAMAS<span class="cursor  ">_</span></h3>
+                <div class="icons">
+                    <img id="dark" class="interactivo objeto" src="img/Iconos/git.png" title="Git" alt="git">
+                    <img class="interactivo objeto" src="img/Iconos/maya.png" title="Maya" alt="maya">
+                    <img class="interactivo objeto" src="img/Iconos/visual.png" title="VisualStudio" alt="VSC">
+                    <img class="interactivo objeto" src="img/Iconos/aseprite.png" title="Aseprite" alt="aseprite">
+                    <img class="interactivo objeto" src="img/Iconos/unity.png" title="Unity" alt="Unity">
+                    <img class="interactivo objeto" src="img/Iconos/unreal.png" title="Unreal" alt="Unreal">
+                    <img class="interactivo objeto" src="img/Iconos/premiere.png" title="Premiere" alt="Premiere">
+                    <img class="interactivo objeto" src="img/Iconos/phsp.png" title="Photoshop" alt="Photoshop">
+                </div>
+            </div>
+
+            <div class="skill-card interactivopeque">
+                <h3 class="objeto">LENGUAJES<span class="cursor ">_</span></h3>
+                <div class="icons">
+                    <img class="interactivo objeto" src="img/Iconos/java.png" title="Java" alt="Java">
+                    <img class="interactivo objeto" src="img/Iconos/html.png" title="HTML" alt="Html">
+                    <img class="interactivo objeto" src="img/Iconos/css.png" title="CSS" alt="css">
+                    <img class="interactivo objeto" src="img/Iconos/sql.png" title="SQL" alt="sql">
+                    <img class="interactivo objeto" src="img/Iconos/csharp.png" title="CSharp" alt="csharp">
+                    <img class="interactivo objeto" src="img/Iconos/js.png" title="Javascript" alt="javascript">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Seccion de proyectos -->
+    <section id="proyectos" class="seccion oculto">
+        <h2 class="titulito objeto">//PROYECTOS <span class="emoji interactivo objeto">t</span></h2>
+
+        <div class="proyecto card interactivopeque objeto ">
+            <h3>> Reminiscencia<span class="cursor ">_</span> </h3>
+            <video src="img/Reminiscencia/VídeoRemi.mp4" class="img-proyecto interactivopeque objeto" autoplay loop  onclick="abrirGaleria(['img/Reminiscencia/VídeoRemi.mp4','img/Reminiscencia/Antes y despues.mp4','img/Reminiscencia/ProtaRemi.png','img/Reminiscencia/BossRemi.png','img/Reminiscencia/BichosRemi.png','img/Reminiscencia/Caminata.mp4','img/Reminiscencia/SalasRemi.png'])"></video>
+            <br>
+            <br>
+            <p><u>Reminiscencia</u> es el título del juego que hicimos un compañero y yo, se trataba de un roguelike con generación de salas hecha con una matriz procedural, hicimos la programación, iluminación, modelaje y texturización desde 0. Tardamos 3 meses en desarrollar este proyecto</p>
+        </div>
+        <div class="proyecto card interactivopeque objeto">
+            <h3>> Animaciones en 3D<span class="cursor">_</span> </h3>
+            <video src="img/Animaciones/AttackShaoRender.mp4" class="img-proyecto interactivopeque objeto" autoplay loop onclick="abrirGaleria(['img/Animaciones/AttackShaoRender.mp4','img/Animaciones/CorrerRenderGarg.mp4','img/Animaciones/RenderCaminarGarg.mp4'])"></video>
+            <br>
+            <br>
+            <p>Aquí hay algunas animaciones y renders en 3D que he hecho, los rigs no son míos, son de Kiel Figgins o de la página Agora Community</p>
+        </div>
+
+
+    </section>
+    <!-- para las imagenes en grande de los proyectos -->
+    <div id="lightbox" class="lightbox oculto">
+        <span id="flecha-izq" class="flecha izq oculto" onclick="cambiarImg(-1)"><</span>
+        <div class="objeto" id="lightbox-img"></div>
+        <span id="flecha-der" class="flecha der oculto" onclick="cambiarImg(1)">></span>
+    </div>
+    <!-- la de contacto -->
+    <section id="contacto" class="seccion oculto">
+        <h2 class="titulito objeto">
+            //CONTÁCTAME!
+            <span class="emoji interactivo objeto">m</span>
+        </h2>
+
+        <p class="objeto">> Contacta directamente conmigo en: <b>ivicecipadi@gmail.com</b><span class="cursor">_</span></p>
+        <p class="objeto">> O descárgate mi CV pulsando <a href="img/Curriculum.pdf" class="descarga" >aquí</a></p>
+        <hr>
+        <br>
+        <div class="contact-icons">
+            <a class="objeto" href="https://github.com/ivicecii" target="_blank">
+                <img id="dark2" src="img/Iconos/git.png" alt="GitHub">
+            </a>
+
+            <a class="objeto" href="https://www.linkedin.com/in/iv%C3%A1n-cecilia-0695902b8/" target="_blank">
+                <img src="img/Iconos/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+    <!-- y el clicker la mejor parte 100% ademas si estas leyendo es porque sabes lo que haces y seguro que estas de acuerdo conmigo a que si-->
+    <section id="clicker" class="seccion oculto">
+        <h2 class="titulito objeto">//CLICKER!!! <span class="emoji interactivo objeto">I</span></h2>
+
+        <div class="shop">
+            <button  class="objeto" onclick="comprarMultiClick()">
+                Mejorar Click - 50 pts
+            </button>
+
+            <button class="objeto" onclick="comprarAutoClick()">
+                Mejorar Autoclicker - 100 pts
+            </button>
+
+            <button class="objeto" onclick="comprarExplosion()">
+                <b>Click Explosivo!! - 1000 pts</b>
+            </button>
+        </div>
+    </section>
+</main>
+<!-- lo de abajo -->
+<footer>
+    <p class="objeto">//2026 - Iván Cecilia\\</p>
+</footer>
+
+
+</body>
+</html>
