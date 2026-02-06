@@ -302,7 +302,7 @@ Hola que tal buenos dias tardes o noches!!!!!!!!!!!!!!!!!!!!!!!!!!!! lol
     opacity: 0.7;
 }
 .oculto {
-    display: none !important;
+    display: none ;
 }
 .explotar {
     animation: boom 1s forwards;
@@ -395,6 +395,6 @@ Hola que tal buenos dias tardes o noches!!!!!!!!!!!!!!!!!!!!!!!!!!!! lol
         gap: 5px;
     }
     .oculto {
-        display: none !important;;
+        display: none ;
     }
 }

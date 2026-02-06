@@ -96,9 +96,25 @@ function cambiarTema() {
         modoOscuro = true;
     }
 }
-window.onload = function () {
-    document.getElementById("lightbox").classList.add("oculto");
-};
+let videos = document.querySelectorAll(".video-hover");
+
+videos.forEach(v => {
+
+    v.addEventListener("mouseenter", () => {
+        v.play();
+    });
+
+    v.addEventListener("mouseleave", () => {
+        v.pause();
+        v.currentTime = 0;
+    });
+
+    v.addEventListener("touchstart", () => {
+        if (v.paused) v.play();
+        else v.pause();
+    });
+
+});
 //clicker !!!!!!
 let puntos = 0;
 let multiClick = 1;
