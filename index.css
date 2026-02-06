@@ -301,7 +301,9 @@ Hola que tal buenos dias tardes o noches!!!!!!!!!!!!!!!!!!!!!!!!!!!! lol
 .descarga:hover {
     opacity: 0.7;
 }
-
+.oculto {
+    display: none;
+}
 .explotar {
     animation: boom 1s forwards;
 }
@@ -312,9 +314,7 @@ Hola que tal buenos dias tardes o noches!!!!!!!!!!!!!!!!!!!!!!!!!!!! lol
     100% { transform: scale(0); opacity: 0; }
 }
 
-.oculto {
-    display: none;
-}
+
 
 .particula {
     position: fixed;

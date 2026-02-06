@@ -81,21 +81,24 @@ function cambiarTema() {
     if (modoOscuro) {
         root.style.setProperty('--fondo', '#fcfcfc');
         root.style.setProperty('--texto', '#111111');
-        icono.src = "img/Iconos/Luna.png";
-        git.src="img/Iconos/gitdark.png"
-        git2.src="img/Iconos/gitdark.png"
+        icono.src = "img/Iconos/Luna.webp";
+        git.src="img/Iconos/gitdark.webp"
+        git2.src="img/Iconos/gitdark.webp"
         gif.style.filter = "invert(1)";
         modoOscuro = false;
     } else {
         root.style.setProperty('--fondo', '#111111');
         root.style.setProperty('--texto', '#fcfcfc');
-        icono.src = "img/Iconos/Sol.png";
-        git.src="img/Iconos/git.png"
-        git2.src="img/Iconos/git.png"
+        icono.src = "img/Iconos/Sol.webp";
+        git.src="img/Iconos/git.webp"
+        git2.src="img/Iconos/git.webp"
         gif.style.filter = "invert(0)";
         modoOscuro = true;
     }
 }
+window.onload = function () {
+    document.getElementById("lightbox").classList.add("oculto");
+};
 //clicker !!!!!!
 let puntos = 0;
 let multiClick = 1;
